@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.un.org/es/climatechange/what-is-climate-change#:~:text=Somos%20responsables%20del,de%20la%20biodiversidad.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+ footer {
+      background-color: #a2c48f;
+      padding: 40px 0;
+      text-align: center;
+      color: #276929;
+      margin-top: 50px;
+      border-top: 2px solid rgba(255, 255, 255, 0.15);
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+    }
+
+    footer strong {
+      color: #075a0a;
+    }
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.section-lateral {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 40px;
+    position: relative;
+}
+.section-lateral::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(https://media.istockphoto.com/id/968197192/es/foto/fondo-de-agua-de-color-turquesa-claro.jpg?s=612x612&w=0&k=20&c=jdlmeR36XPygalMpSGGwPjDFBqMqzqeFk9x9zj2Mae4=);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.65;
+    z-index: 0;
+}
+
+.subtitulo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #07a8ad;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.texto-lateral {
+    width: 60%;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+ .hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); 
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-logo {
+  width: 250px;
+  max-width: 80%;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.6));
+}
+.logo2img{
+    width:50px;
+    height:55px;
+    border-radius:8px;
+
+
+}
+
+
+.h1 {
+      text-align: center;
+      font-size: 50px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: cadetblue;
+    }
+
+    .navbar {
+      background-color: #a2c48f !important; /* color oscuro fijo */
+      padding: 10px 40px;
+    }
+
+    .navbar-brand, .nav-link {
+      color: #385235 !important; /* color celeste */
+      font-weight: 500;
+    }
+
+    .navbar-brand:hover, .nav-link:hover {
+      color: #ffffff !important;
+    }
+
+    .logo img {
+      height: 50px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    .ultimas-noticias {
+    background: linear-gradient(to right, #007bb6, #00a896); 
+    color: white;
+    padding: 20px;
+}
+
+.ultimas-noticias h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.noticias-contenedor {
+    display: flex;
+    gap: 10px;
+}
+
+.noticia-card {
+    flex: 1; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 25px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    min-height: 280px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.noticia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(255, 255, 255, 0.15); 
+}
+
+.noticia-card time {
+    font-size: 0.85em;
+    opacity: 0.6; 
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.noticia-card h3 {
+    font-size: 1.25em; 
+    font-weight: 700; 
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.noticia-card .resumen {
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-bottom: 15px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+}
+
+.leer-mas {
+    color: white; 
+    text-decoration: none; 
+    font-weight: 600;
+    font-size: 1em;
+    padding-top: 10px; 
+    margin-top: auto; 
+    transition: color 0.3s ease;
+}
+
+.leer-mas:hover {
+    color: #ffd700; 
+}
+
+
+
+  
+    </style>
+<header>
+
+
+ <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- Logo a la izquierda -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <div class="logo">
+          <img src="logo2.png" alt="Logo el sitio web">
+        </div>
+        Accion por el clima
+      </a>
+
+      <!-- Botón responsive -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links alineados a la derecha -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="i.html">Inicio</a>
+          <a class="nav-link" href="index.html">Nuestra Empresa</a>
+          <a class="nav-link" href="index3.html">Relación con el Objetivo 13</a>
+          <a class="nav-link" href="#">Agenda 2030</a>
+          <a class="nav-link" href="CONTACTO.HTML">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+  <main>
+<section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="fondo2.mp4" type="video/mp4">
+      Tu navegador no soporta videos HTML5.
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <img src="logo2.png" alt="Mi Logo" class="hero-logo">
+    </div>
+  </section>
+  <section class="section-lateral">
+   <h2 class="subtitulo">Nuestra empresa</h2>
+
+        
+        <div class="texto-lateral">
+            <p>Nuestra empresa está firmemente comprometida con la protección del planeta y con revertir, en la medida de lo posible, los efectos del cambio climático. Creemos que cada acción cuenta, por pequeña que parezca, y por ello impulsamos prácticas sustentables que ayuden a disminuir el impacto ambiental generado por las actividades humanas.
+Nuestro principal enfoque es reducir el uso de plásticos de un solo uso, promoviendo alternativas responsables y ecológicas. Fomentamos el uso de productos reutilizables como botellas, termos, bolsas resistentes, contenedores duraderos y otros artículos que contribuyen a disminuir la generación de residuos. Además, impulsamos campañas de educación ambiental para concientizar a nuestra comunidad sobre la importancia de adoptar hábitos de consumo más responsables.
+También trabajamos en la implementación de procesos internos más eficientes, buscando optimizar recursos y minimizar el desperdicio en cada etapa de nuestra operación. Entre nuestras acciones se encuentran el uso de materiales biodegradables, la correcta separación de residuos, la reducción del consumo de energía y la adopción de tecnologías más limpias.
+Nos esforzamos por crear una cultura organizacional orientada a la sostenibilidad, invitando a clientes, colaboradores y aliados a sumarse a este movimiento. Nuestra visión es construir un futuro más sano y equilibrado, donde las nuevas generaciones puedan disfrutar de un entorno natural en armonía.
+En esencia, nuestra misión es simple pero poderosa: actuar hoy para garantizar el bienestar del mañana, demostrando que un cambio positivo sí es posible cuando trabajamos juntos.</p>
+        </div>
+        </section>
+<section class="ultimas-noticias">
+    <h2>ÚLTIMAS NOTICIAS</h2>
+    
+    <div class="noticias-contenedor">
+        
+        <article class="noticia-card">
+            <time datetime="YYYY-MM-DD">2025</time> 
+            <h3>Somos responsables del calentamiento global</h3>
+            <p class="resumen"> La temperatura media de la Tierra es ahora 1,1 °C más elevada que a finales del siglo XIX, antes de la revolución industrial, y más elevada en términos absolutos que en los últimos 100 000 años. La última década (2011-2020) fue la más cálida registrada. En esa línea, cada una de las cuatro décadas útlimas ha sido más caliente que cualquier otra década desde 1850... </p>
+            <a href="https://www.un.org/es/climatechange/what-is-climate-change#:~:text=Somos%20responsables%20del,de%20la%20biodiversidad. " class="leer-mas">LEER MÁS ></a>
+        
+          </article>
+
+        <article class="noticia-card">
+            <h3>Frente frío 14: ¿qué estados se verán más afectados?</h3>
+            <p class="resumen">Este nuevo frente frío se moverá en dirección al noreste del territorio mexicano...</p>
+            <a href="https://www.eluniversal.com.mx/tendencias/frente-frio-14-que-estados-se-veran-mas-afectados/#:~:text=Frente%20fr%C3%ADo%2014,Archivo%20EL%20UNIVERSAL" class="leer-mas">LEER MÁS ></a>
+        </article>
+
+        <article class="noticia-card">
+            <h3>Ha sido una década peligrosa desde el Acuerdo Climático de París, pero aún hay motivos para la esperanza</h3>
+            <p class="resumen">Hace una década, el mundo se unió y decidió solucionar la crisis climática adoptando el Acuerdo de París...</p>
+            <a href="https://cnnespanol.cnn.com/2025/11/09/clima-y-tiempo/aniversario-acuerdo-paris-cop30#:~:text=Hace%20una%20d%C3%A9cada,se%20han%20olvidado." class="leer-mas">LEER MÁS ></a>
+        </article>
+        
+    </div>
+</section>
+
+<footer>
+       <p><strong>Equipo de desarrollo</strong></p>
+    <p>Rosendo Alberto Villa Cruz</p>
+    <p>Javier Eduardo Martínez Vidal</p>
+    <p>Alyson Ávila Estrada</p>
+    <p>Sofía Melissa Ortiz Herrera</p>
+    <p>Andrea Karime García García</p>
+
+   </footer>
+
+
+  </main>  
+</body>
+</html>
