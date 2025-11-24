@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Relación con el Objetivo 13</title>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+
+    <style>
+
+ footer {
+      background-color: #a2c48f;
+      padding: 40px 0;
+      text-align: center;
+      color: #276929;
+      margin-top: 50px;
+      border-top: 2px solid rgba(255, 255, 255, 0.15);
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+    }
+
+    footer strong {
+      color: #075a0a;
+    }
+      /* Fondo ambiental */
+      body {
+        background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+        font-family: "Poppins", sans-serif;
+        color: #2e4a2f;
+        margin: 0;
+        padding: 0;
+      }
+
+
+      /* Encabezado */
+      header {
+       background: linear-gradient(90deg, #affcb2, #8dbb90);
+
+        color: white;
+        text-align: center;
+        padding: 2rem 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+
+      header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+
+      header p {
+        font-size: 1.1rem;
+        margin: 0;
+        opacity: 0.9;
+      }
+
+
+      /* Acordeón */
+      .accordion {
+        max-width: 800px;
+        margin: 2rem auto;
+        border-radius: 12px;
+        overflow: hidden;
+        background-color: transparent;
+      }
+
+
+      .accordion-item {
+        border: none;
+        margin-bottom: 1rem;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background-color: #ffffffb0;
+        backdrop-filter: blur(5px);
+        transition: transform 0.2s ease;
+      }
+
+
+      .accordion-item:hover {
+        transform: scale(1.01);
+      }
+
+
+      .accordion-button {
+        background-color: #a5d6a7;
+        color: #1b5e20;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+
+      .accordion-button:not(.collapsed) {
+        background-color: #66bb6a;
+        color: #fff;
+      }
+
+
+      .accordion-button:focus {
+        box-shadow: none;
+        border-color: #81c784;
+      }
+
+
+      .accordion-body {
+        background-color: #f9fff9;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #2e4a2f;
+        padding: 1.5rem;
+      }
+
+
+      .accordion-collapse.collapse.show {
+        animation: fadeIn 0.4s ease-in-out;
+      }
+
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-5px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2rem;
+        }
+        .accordion-body {
+          font-size: 0.95rem;
+        }
+      }
+      .navbar {
+  display: flex;
+  justify-content: space-between; /* logo izquierda, links derecha */
+  align-items: center;
+  background-color: #2b2b2b; /* fondo oscuro */
+  padding: 10px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #00bcd4;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+.navbar {
+      background-color: #a2c48f !important; /* color oscuro fijo */
+      padding: 10px 40px;
+    }
+
+    .navbar-brand, .nav-link {
+      color: #385235 !important; /* color celeste */
+      font-weight: 500;
+    }
+
+    .navbar-brand:hover, .nav-link:hover {
+      color: #ffffff !important;
+    }
+
+    .logo img {
+      height: 50px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    </style>
+  </head>
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- Logo a la izquierda -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <div class="logo">
+          <img src="logo2.png" alt="Logo el sitio web">
+        </div>
+        Accion por el clima
+      </a>
+
+      <!-- Botón responsive -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links alineados a la derecha -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="i.html">Inicio</a>
+          <a class="nav-link" href="index.html">Nuestra Empresa</a>
+          <a class="nav-link" href="index3.html">Relación con el Objetivo 13</a>
+          <a class="nav-link" href="#">Agenda 2030</a>
+          <a class="nav-link" href="CONTACTO.HTML">Contacto</a>
+        </div>
+      </div>
+    </div>
+
+</nav>
+    <!-- ENCABEZADO -->
+    <header>
+      <h1>🌿 Relación con el Objetivo 13</h1>
+      <p>Acción por el clima — Innovación sostenible para un futuro verde</p>
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Eco-acción
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Es un sistema innovador de paneles inteligentes creados para limpiar el aire de las ciudades,
+            capturar dióxido de carbono (CO₂) y transformar parte de la contaminación en energía limpia.
+            Su propósito principal es contribuir al Objetivo 13 de la Agenda 2030 de la ONU, relacionado
+            con la acción por el clima, y fomentar el uso de energías renovables en entornos urbanos.
+            <br /><br />
+            Cada panel combina tecnología fotocatalítica y microalgas vivas que, al recibir luz solar,
+            descomponen contaminantes como el CO₂, los óxidos de nitrógeno (NOx) y el dióxido de azufre (SO₂),
+            al mismo tiempo que liberan oxígeno, imitando la fotosíntesis natural. Además, integran celdas solares
+            que generan energía para alimentar microventiladores, iluminación o cargadores ecológicos, junto con sensores
+            que monitorean en tiempo real la calidad del aire.
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            Techos Verdes Urbanos
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Son espacios cubiertos de vegetación instalados en los techos de edificios o viviendas.
+            Ayudan a reducir la temperatura ambiental, mejorar la calidad del aire, retener el agua
+            de lluvia y disminuir el uso de energía, contribuyendo a un entorno urbano más fresco y sostenible.
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Reforestación Inteligente
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Utiliza drones y sensores para plantar árboles en zonas degradadas y monitorear su crecimiento.
+            Esta tecnología permite restaurar ecosistemas de manera más rápida y eficiente, ayudando a capturar CO₂,
+            recuperar la biodiversidad y combatir los efectos del cambio climático.
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <footer>
+    <p><strong>Equipo de desarrollo</strong></p>
+    <p>Rosendo Alberto Villa Cruz</p>
+    <p>Javier Eduardo Martínez Vidal</p>
+    <p>Alyson Ávila Estrada</p>
+    <p>Sofía Melissa Ortiz Herrera</p>
+    <p>Andrea Karime García García</p>
+  </footer>
+
+  </body>
+</html>
